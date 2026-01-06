@@ -12,7 +12,12 @@
 \providecommand\fromweb{\href{https://siebelschool.illinois.edu}{siebelschool.illinois.edu}}
 
 % closing address
-\providecommand\fromname{Jongyul Kim\\Postdoctoral Research Associate}
+\providecommand\fromname{Jongyul Kim \\ Postdoctoral Research Associate}
+\providecommand\frominfo{
+Siebel School of Computing and Data Science \\
+University of Illinois Urbana-Champaign \\
+Email: jyk@illinois.edu / yulistic@gmail.com \\
+Web: \href{http://yulistic.com}{yulistic.com}}
 
 \input{illinois}
 
@@ -23,9 +28,74 @@
 \today
 \bigskip
 
-To whom it may concern---
-\bigskip
+Dear Members of the Admissions Committee,
 
-\lipsum[1-2]
+I am writing to highly recommend Peizhe Liu for admission to your Ph.D. program.
+%
+I am a Postdoctoral Research Associate at the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign (UIUC).
+%
+I have had the pleasure of working closely with Peizhe since Fall 2024, when he joined our research group as a research intern.
+%
+Currently, he is pursuing his M.S. in Computer Science at UIUC after completing his undergraduate studies here.
+%
+Based on my close collaboration with him on multiple systems research projects, I have been consistently impressed by his technical capabilities and research potential.
+
+\medskip
+\textbf{Technical Excellence and Research Contributions.}
+Peizhe has demonstrated exceptional technical skills across several challenging systems projects.
+%
+In the \textit{Mux project}, which aims to build a storage-multiplexing abstraction for heterogeneous storage devices and their associated file systems, Peizhe took ownership of critical software components above the system call interception layer, including virtual file descriptor management, metadata management, and block distribution logic.
+%
+His implementation was clean, well-structured, and showed a deep understanding of low-level system internals.
+
+In another project focusing on an \textit{asynchronous I/O scheduler} that exposes a POSIX interface for memory-semantic storage devices (e.g., CXL-based SSDs and persistent memory), Peizhe was responsible for the core technical work: the I/O scheduler itself and its concurrency control mechanisms.
+%
+He further proposed extending it to storage systems for LLM training and inference by leveraging its efficient random I/O handling --- a critical requirement for modern AI workloads.
+%
+He continues to develop the asynchronous I/O scheduler in kernel space, demonstrating the maturity required to develop and debug kernel-level system software.
+
+Most impressively, Peizhe worked on \textit{checkpointing optimization} for a user-level file system by offloading functionality to the ARM CPU of a smart device (i.e., NVIDIA Bluefield-2 DPU).
+%
+He dove deep into the implementation details, systematically analyzing performance bottlenecks, and ultimately achieved more than 5x performance improvement over the original implementation.
+%
+This result clearly demonstrated his strong systems analysis and development capabilities.
+%
+Building on these results, Peizhe is now independently leading research on checkpointing offloading to smart devices, including comparative evaluations against traditional journaling file systems, ext4.
+%
+This work forms the basis of his master's thesis.
+%
+Additionally, he designed and conducted AI storage benchmarks, including RAG retrieval and checkpointing use cases, to rigorously evaluate the file system's performance.
+%
+Through this process, I observed that he is open-minded and eager to learn new concepts and technologies.
+
+\medskip
+\textbf{Work Ethic and Communication.}
+What sets Peizhe apart is not only his technical ability but also his work ethic and communication skills.
+%
+Despite balancing demanding coursework and TA responsibilities, he consistently delivered high-quality work on time.
+%
+He is proactive, self-driven, and communicates clearly about progress and challenges.
+%
+He communicates fluently in both written and spoken English.
+%
+When requirements were ambiguous, he actively engaged with collaborators to precisely define the issues before proceeding.
+%
+These qualities make him an excellent collaborator and will serve him well in a Ph.D. program.
+
+\medskip
+\textbf{Research Potential.}
+Peizhe has expressed a strong interest in hardware-software co-design for building high-performance systems at scale.
+%
+Given his deep understanding of low-level systems, his proven ability to tackle complex system-level problems, and his demonstrated research productivity, I am confident that he has the qualities necessary to become an excellent researcher.
+
+\medskip
+In summary, I strongly recommend Peizhe Liu for your Ph.D. program without hesitation.
+%
+I believe he will make significant contributions to your research community.
+%
+Please feel free to contact me if you have any questions.
+
+\bigskip
+Sincerely,
 
 \end{document}
